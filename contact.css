@@ -120,3 +120,9 @@ background-attachment: fixed;
   color: red;
   margin-right: 30;
 }
+.cont h6{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 100;
+   text-align: left;
+}
