@@ -89,3 +89,7 @@ background-attachment: fixed;
    text-align: justify;
 text-indent: 30;
 }
+/*VIDEO*/
+.container{
+  margin-left: 50;
+}
