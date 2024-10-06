@@ -139,3 +139,14 @@ iframe:hover{
 transform: scale(1.1);
  opacity: 1;
 }
+/*RESOURCES*/
+.copyr{
+  display: flex;
+  box-sizing: border-box;
+}
+.son1 {
+border: 1px;
+}
+.son1 p{
+  font-size: 30px;
+}
