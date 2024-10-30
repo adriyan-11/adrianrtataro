@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+body{
+  background-color: #040720;
+}
+.banner {
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*LOGO ROTATION*/
+#box1{
+  animation: logo 5s infinite linear;
+}
+@keyframes logo{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(359deg);
+  }
+}
+.logo #box1{
+  right: 100px;
+  transform: rotateY(90deg);
+}
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+/*NAVBUTTON*/
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: top;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+.content h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+.cont h2{
+  color: white;
+  font-size: 50px;
+  margin-top: 80px;
+  margin-left: 30;
+   text-align: left;
+}
+.kk h2{
+  color: white;
+  font-size: 50px;
+  margin-top: 80px;
+  margin-left: 30;
+   text-align: left;
+}
+.cont h3{
+  color: white;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-left: 30;
+   text-align: left;
+}
+.cont p{
+  color: darkgray;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: 50;
+   text-align: left;
+}
+.cont h4{
+  color: darkgrey;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 50;
+   text-align: left;
+}
+/*ICON*/
+.fa-location-dot {
+  font-size: 50px;
+  color: red;
+  margin-right: 30;
+}
+.fa-phone{
+  font-size: 50px;
+  color: red;
+  margin-right: 30;
+}
+.fa-user-check{
+  font-size: 50px;
+  color: red;
+  margin-right: 30;
+}
+.fa-code{
+  font-size: 50px;
+  color: red;
+  margin-right: 30;
+}
+.fa-copyright{
+  font-size: 50px;
+  color: red;
+  margin-right: 30;
+}
+.cont h6{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 50;
+   text-align: left;
+}
+/*LOCATION*/
+iframe{
+  border-radius: 2em;
+  border: none;
+ width: 900px;
+ height: 500px;
+ opacity: 0.7;
+ transition: 0.3s ease-in-out;
+}
+iframe:hover{
+transform: scale(1.1);
+opacity: 1;
+}
+/*RESOURCES*/
+.copyr{
+  display: flex;
+  box-sizing: border-box;
+}
+.son1 {
+border: 1px;
+}
+.son1 p{
+  font-size: 30px;
+}
+
+/*GETINTOUCH*/
+
+body{
+font-family: 'Outfit';
+}
+.contact-container{
+height: 10vh;
+display: right;
+align-items: flex;
+justify-content: space-evenly;
+margin-left: 120px;
+}
+.contact-left{
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 20px;
+}
+.contact-left-title h2{
+font-weight: 600;
+color: white;
+font-size: 40px;
+margin-bottom: 5px;
+}
+.contact-left-title hr{
+border: none;
+width: 120px;
+height: 5px;
+background-color: white;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+.contact-inputs{
+width: 400px;
+height: 50px;
+border: none;
+outline: none;
+padding-left: 25px;
+font-weight: 500;
+color: #666;
+border-radius: 50px;
+}
+.contact-left textarea{
+height: 140px;
+padding-top: 15px;
+border-radius: 20px;
+}
+.contact-left textarea{
+height: 140px;
+padding-top: 15px;
+border-radius: 20px;
+}
+.contact-inputs:focus {
+border: 2px solid #d9544d;
+}
+.contact-inputs::placeholder{
+color: #a9a9a9;
+}
+
+.contact-left button{
+display: flex;
+align-items: center;
+padding: 15px 30px;
+font-size: 16px;
+color: #fff;
+gap: 10px;
+border: none;
+border-radius: 50px;
+background: linear-gradient(270deg,#d9544d, #ff9194 );
+cursor: pointer;
+}
+.contact-left button img{
+height: 15px;
+}
+.contact-right img{
+width: 500px;
+}
+@media (max-width:800px) {
+.contact-inputs{
+width: 80vw;}
+.contact-right{
+display: none;}
+}
